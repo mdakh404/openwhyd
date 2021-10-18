@@ -55,7 +55,7 @@ const promisedTemplatePerLang = Object.entries(filePerLang).reduce(
 );
 
 async function renderPageContent(params) {
-  var safeRedirect = snip.sanitizeJsStringInHtml(params.redirect || '/');
+  var safeRedirect = snip.sanitizeJsStringInHtml( '/home' || '/');
   // credits: flag icons by Freepik, https://www.flaticon.com/packs/countrys-flags
   return [
     '<div class="container" id="consent-container" data-lang="lang-en">',
